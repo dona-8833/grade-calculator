@@ -35,11 +35,11 @@ def assign_letter_grade(score: float, has_extra_credit: bool = False) -> str:
     grade = "F"
     if final_score >= 90.0:
         grade = "A"
-    if final_score >= 80.0:
+    if 80.0 <= final_score < 90.0:
         grade = "B"
-    if final_score >= 70.0:
+    if 70.0 <= final_score < 80.0:
         grade = "C"
-    if final_score >= 60.0:
+    if 60.0 <= final_score < 70.0:
         grade = "D"
 
     return grade
